@@ -8,7 +8,7 @@
 #ifdef FIBONACCI_EXPORTS
 #define FIBONACCI_API __declspec(dllexport)
 #else
-#define MATHLIBRARY_API __declspec(dllimport)
+#define FIBONACCI_API __declspec(dllimport)
 #endif
 
 // The Fibonacci recurrence relation describes a sequence F
