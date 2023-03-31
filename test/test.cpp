@@ -17,7 +17,6 @@ int main()
     std::cout << fibonacci_index() + 1 <<
         " Fibonacci sequence values fit in an " <<
         "unsigned 64-bit integer." << std::endl;
-
     std::cin.get();
 }
 

@@ -24,13 +24,13 @@ void fibonacci_init(
 
 // Produce the next value in the sequence.
 // Returns true on success, false on overflow.
-bool fibonacci_next()
+int fibonacci_next()
 {
     // check to see if we'd overflow result or position
     if ((ULLONG_MAX - previous_ < current_) ||
         (UINT_MAX == index_))
     {
-        return false;
+        return 0;
     }
 
     // Special case when index == 0, just return b value
@@ -41,7 +41,7 @@ bool fibonacci_next()
     }
     std::swap(current_, previous_);
     ++index_;
-    return true;
+    return 1;
 }
 
 // Get the current value in the sequence.

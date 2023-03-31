@@ -28,7 +28,7 @@ extern "C" FIBONACCI_API void fibonacci_init(const unsigned long long a, const u
 // Produce the next value in the sequence.
 // Returns true on success and updates current value and index;
 // false on overflow, leaves current value and index unchanged.
-extern "C" FIBONACCI_API bool fibonacci_next();
+extern "C" FIBONACCI_API int fibonacci_next();
 
 // Get the current value in the sequence.
 extern "C" FIBONACCI_API unsigned long long fibonacci_current();
