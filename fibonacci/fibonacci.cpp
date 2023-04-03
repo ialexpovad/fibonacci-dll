@@ -5,6 +5,7 @@
 #include <limits.h>
 #include "fibonacci.h"
 
+
 // DLL internal state variables:
 static unsigned long long previous_;  // Previous value, if any
 static unsigned long long current_;   // Current sequence value
